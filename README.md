@@ -1,3 +1,10 @@
+# Docker
+```
+docker build -t doc2graph-cuda11.8:latest --progress=plain .
+
+docker run --name doc2graph_container -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --gpus all -it doc2graph-cuda11.8:latest /bin/bash
+```
+
 # <p align=center>`Doc2Graph`</p> 
 
 ![model](model.png)
